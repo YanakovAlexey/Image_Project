@@ -13,8 +13,8 @@ import java.io.IOException;
 @RestController("/")
 public class FilesController {
 
-    private static String BASE_BOOK_IMAGE_PATH = "/var/Folder-Image/";;
-    private static String BASE_BOOK_FILE_PATH = "/var/Folder-Content/";;
+    private static String BASE_BOOK_IMAGE_PATH = "/var/Folder-Image/";
+    private static String BASE_BOOK_FILE_PATH = "/var/Folder-Content/";
 
     @GetMapping(value = "/images/{fileName}")
     public ResponseEntity<InputStreamResource> getImage(@PathVariable String fileName) throws IOException {
