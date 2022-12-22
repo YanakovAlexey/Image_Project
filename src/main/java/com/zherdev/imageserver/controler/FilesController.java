@@ -37,7 +37,7 @@ public class FilesController {
 
         return ResponseEntity
                 .ok()
-                .contentType(MediaType.APPLICATION_PDF)
+                .contentType(MediaType.TEXT_PLAIN)
                 .body(new InputStreamResource(file.getInputStream()));
     }
 }
